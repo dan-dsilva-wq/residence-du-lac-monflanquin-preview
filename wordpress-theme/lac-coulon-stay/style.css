@@ -3,7 +3,7 @@ Theme Name: Résidence du Lac Monflanquin
 Theme URI: https://www.airbnb.com/rooms/1702932144013864164
 Author: Daniel & Codex
 Description: A bilingual, editable block theme faithfully based on the approved Concept 1 mockups.
-Version: 1.0.1
+Version: 1.1.0
 Requires at least: 6.6
 Requires PHP: 7.4
 Text Domain: lac-coulon-stay
@@ -251,6 +251,112 @@ a { color: inherit; }
 .labelled-photo:last-child img { object-position: center 53%; }
 .photo-label { position: absolute; left: 12px; bottom: 12px; padding: 7px 17px; border-radius: 999px; background: rgba(255, 251, 240, .94); font-family: var(--display-font); font-size: 15px; }
 
+/* Expanded editorial sections */
+.section-heading { width: min(820px, calc(100% - 48px)); margin: 0 auto 36px !important; text-align: center; }
+.section-heading h2 { margin-top: 9px !important; font-size: clamp(38px, 4vw, 58px); }
+.section-intro { margin-top: 15px !important; color: #565e59; font-size: 17px; }
+.editorial-split { width: min(1380px, calc(100% - 96px)); margin: 76px auto !important; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); gap: clamp(38px, 6vw, 88px); align-items: center; }
+.editorial-media,
+.editorial-media img { width: 100%; height: 540px; display: block; border-radius: 14px; }
+.editorial-media img { object-fit: cover; }
+.home-introduction .editorial-media img { object-position: center 60%; }
+.editorial-copy { padding: 24px 0; }
+.editorial-copy h2 { margin-top: 10px !important; font-size: clamp(39px, 4.1vw, 59px); }
+.editorial-copy .section-intro { max-width: 650px; }
+.handwritten-note { max-width: 590px; margin-top: 25px !important; color: #55776d; font-family: "Segoe Script", "Bradley Hand", cursive; font-size: 20px; line-height: 1.55 !important; transform: rotate(-1deg); }
+.detail-note { margin-top: 21px !important; padding-left: 18px; border-left: 3px solid var(--clay); color: var(--muted); font-size: 14px; }
+
+.feature-section,
+.pace-section,
+.timeline-section,
+.lake-facts-section,
+.village-life-section,
+.area-ideas-section,
+.travel-section,
+.room-tour-section { padding: 82px 0; }
+.feature-section,
+.timeline-section,
+.village-life-section,
+.travel-section { background: var(--cream); }
+.pace-section,
+.lake-facts-section,
+.area-ideas-section,
+.room-tour-section { background: var(--paper); }
+.feature-tile-grid { width: min(1380px, calc(100% - 96px)); margin: 0 auto !important; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.feature-tile { min-height: 235px; padding: 30px 27px; border: 1px solid var(--line); border-radius: 13px; background: rgba(255, 254, 250, .9); }
+.feature-tile .line-icon { width: 43px; height: 43px; color: #5b7869; }
+.feature-tile h3 { margin-top: 18px !important; font-size: 26px; }
+.feature-tile > p { margin-top: 10px !important; color: var(--muted); font-size: 14px; }
+.pace-grid { width: min(1380px, calc(100% - 96px)); margin: 0 auto !important; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.pace-grid .story-card-image,
+.pace-grid .story-card-image img { height: 340px; }
+.pace-grid .story-card:nth-child(1) img { object-position: center 74%; }
+.pace-grid .story-card:nth-child(2) img { object-position: center 55%; }
+.pace-grid .story-card:nth-child(3) img { object-position: center; }
+.pace-grid .story-card-body { min-height: 160px; padding-right: 24px; }
+
+.cta-band { width: min(1380px, calc(100% - 96px)); margin: 76px auto 48px !important; padding: 42px 46px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 470px); gap: 46px; align-items: center; border-radius: 16px; background: var(--deep-ink); color: white; box-shadow: var(--shadow); }
+.cta-band-copy h2 { font-size: clamp(34px, 3.3vw, 49px); }
+.cta-band-copy p { max-width: 720px; margin-top: 10px !important; color: rgba(255,255,255,.75); }
+.cta-band-actions { display: flex; gap: 12px; }
+.cta-band-actions .wp-block-buttons { flex: 1 1 0; }
+.cta-band .button-secondary .wp-block-button__link { border: 1px solid rgba(255,255,255,.45); background: transparent; }
+.cta-band .button-secondary .wp-block-button__link:hover { background: rgba(255,255,255,.1); }
+.cta-band + .site-footer { margin-top: 0 !important; }
+
+/* Room-by-room property tour */
+.room-tour-section { padding-bottom: 46px; }
+.room-tour { width: min(1380px, calc(100% - 96px)); margin: 0 auto !important; }
+.room-detail { margin-bottom: 30px !important; display: grid; grid-template-columns: 1.08fr .92fr; align-items: stretch; border: 1px solid var(--line); border-radius: 15px; overflow: hidden; background: white; box-shadow: 0 10px 30px rgba(30, 53, 43, .055); }
+.room-detail:nth-child(even) .room-detail-image { order: 2; }
+.room-detail-image,
+.room-detail-image img { width: 100%; height: 465px; display: block; }
+.room-detail-image img { object-fit: cover; }
+.room-detail:nth-child(1) img { object-position: center 55%; }
+.room-detail:nth-child(2) img { object-position: center 43%; }
+.room-detail:nth-child(3) img { object-position: center; }
+.room-detail:nth-child(4) img { object-position: center 76%; }
+.room-detail-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(34px, 5vw, 72px); }
+.room-detail-copy h2 { margin-top: 10px !important; font-size: clamp(34px, 3.4vw, 50px); }
+.room-detail-copy > p:not(.overline):not(.detail-note) { margin-top: 16px !important; color: #525b56; font-size: 16px; }
+.home-amenities-section { background: #eef4ef; }
+.amenity-detail-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.amenity-detail-grid .feature-tile { min-height: 210px; }
+
+/* Pool, lake and outdoor detail */
+.day-timeline { width: min(1380px, calc(100% - 96px)); margin: 0 auto !important; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; }
+.travel-step { position: relative; min-height: 230px; padding: 28px 28px 24px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper); }
+.travel-step:first-child { border-left: 1px solid var(--line); border-radius: 13px 0 0 13px; }
+.travel-step:last-child { border-right: 1px solid var(--line); border-radius: 0 13px 13px 0; }
+.travel-step + .travel-step::before { content: ""; position: absolute; left: 0; top: 28px; bottom: 28px; width: 1px; background: var(--line); }
+.step-number { color: var(--clay-dark); font-family: var(--display-font); font-size: 19px; }
+.travel-step h3 { margin-top: 28px !important; font-size: 28px; }
+.travel-step > p:last-child { margin-top: 9px !important; color: var(--muted); font-size: 14px; }
+.text-card-grid,
+.area-card-grid { width: min(1380px, calc(100% - 96px)); margin: 0 auto !important; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.text-card { min-height: 285px; padding: 34px; border: 1px solid var(--line); border-radius: 13px; background: var(--paper); }
+.text-card-kicker { color: var(--clay-dark); font-size: 11px; font-weight: 700; letter-spacing: .18em; }
+.text-card h3 { margin-top: 16px !important; font-size: 31px; }
+.text-card > p:not(.text-card-kicker):not(.text-card-link) { margin-top: 13px !important; color: var(--muted); font-size: 14px; }
+.text-card-link { margin-top: 24px !important; color: var(--clay-dark); font-size: 14px; font-weight: 700; }
+.text-card-link a:hover { text-decoration: underline; }
+.outdoor-activity-section { background: #edf4f0; }
+
+/* Village and area depth */
+.village-history { grid-template-columns: minmax(360px, .92fr) minmax(0, 1.08fr); }
+.village-history .editorial-media img { object-position: center; }
+.area-ideas-section { padding-top: 76px; }
+.area-card-grid .text-card { min-height: 250px; background: #f7f1e8; }
+.info-note { width: min(1380px, calc(100% - 96px)); margin: 22px auto 0 !important; color: var(--muted); font-size: 13px; text-align: center; }
+.village-closing-band { margin-top: 0 !important; }
+
+/* Practical planning */
+.travel-steps { width: min(1380px, calc(100% - 96px)); margin: 0 auto !important; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.confirmation-note { width: min(1000px, calc(100% - 96px)); margin: 36px auto 0 !important; padding: 28px 32px; display: grid; grid-template-columns: 54px 1fr; gap: 20px; align-items: start; border-radius: 13px; background: var(--mist); }
+.confirmation-note .line-icon { width: 48px; height: 48px; color: #55776d; }
+.confirmation-note h2 { font-size: 30px; }
+.confirmation-note p { margin-top: 8px !important; color: var(--muted); font-size: 14px; }
+
 /* Footer */
 .site-footer { position: relative; overflow: hidden; min-height: 115px; margin-top: 28px !important; background: var(--mist); }
 .site-footer::before,
@@ -289,6 +395,16 @@ a { color: inherit; }
   .village-feature:last-child { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; column-gap: 20px; align-items: start; }
   .practical-main { width: calc(100% - 54px); grid-template-columns: minmax(0, 1fr) minmax(320px, .8fr); gap: 25px; }
   .practical-amenities, .practical-photos { width: calc(100% - 54px); }
+  .editorial-split { width: calc(100% - 56px); gap: 38px; }
+  .editorial-media, .editorial-media img { height: 450px; }
+  .feature-tile-grid { width: calc(100% - 56px); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pace-grid, .room-tour, .day-timeline, .text-card-grid, .area-card-grid, .travel-steps { width: calc(100% - 56px); }
+  .room-detail-image, .room-detail-image img { height: 420px; }
+  .room-detail-copy { padding: 38px; }
+  .day-timeline, .travel-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .travel-step { border: 1px solid var(--line); border-radius: 12px !important; }
+  .travel-step + .travel-step::before { display: none; }
+  .cta-band { width: calc(100% - 56px); grid-template-columns: 1fr 360px; padding: 36px; }
 }
 
 @media (max-width: 760px) {
@@ -362,6 +478,42 @@ a { color: inherit; }
   .practical-photos { width: calc(100% - 28px); display: block; }
   .labelled-photo { margin-bottom: 12px !important; }
   .labelled-photo figure, .labelled-photo img { height: 260px; }
+
+  .feature-section, .pace-section, .timeline-section, .lake-facts-section, .village-life-section, .area-ideas-section, .travel-section, .room-tour-section { padding: 54px 0; }
+  .section-heading { width: calc(100% - 36px); margin-bottom: 26px !important; text-align: left; }
+  .section-heading h2 { font-size: 36px; }
+  .section-intro { font-size: 15px; }
+  .editorial-split, .village-history { width: calc(100% - 28px); margin: 52px auto !important; display: flex; flex-direction: column; gap: 18px; }
+  .editorial-media, .editorial-media img { height: 320px; }
+  .village-history .editorial-media { order: -1; }
+  .editorial-copy { padding: 14px 4px; }
+  .editorial-copy h2 { font-size: 36px; }
+  .handwritten-note { font-size: 17px; }
+  .feature-tile-grid, .amenity-detail-grid { width: calc(100% - 28px); display: block; }
+  .feature-tile { min-height: 0; margin-bottom: 12px !important; padding: 24px 22px; }
+  .feature-tile h3 { margin-top: 12px !important; font-size: 24px; }
+  .pace-grid, .text-card-grid, .area-card-grid { width: calc(100% - 28px); display: block; }
+  .pace-grid .story-card-image, .pace-grid .story-card-image img { height: 235px; }
+  .pace-grid .story-card-body { min-height: 128px; }
+  .cta-band { width: calc(100% - 28px); margin: 50px auto 28px !important; padding: 29px 23px; display: block; }
+  .cta-band-copy h2 { font-size: 34px; }
+  .cta-band-actions { margin-top: 25px !important; display: block; }
+  .cta-band-actions .wp-block-buttons + .wp-block-buttons { margin-top: 10px !important; }
+  .room-tour { width: calc(100% - 28px); }
+  .room-detail { display: flex; flex-direction: column; }
+  .room-detail:nth-child(even) .room-detail-image { order: 0; }
+  .room-detail-image, .room-detail-image img { height: 280px; }
+  .room-detail-copy { padding: 28px 22px 32px; }
+  .room-detail-copy h2 { font-size: 34px; }
+  .day-timeline, .travel-steps { width: calc(100% - 28px); display: block; }
+  .travel-step { min-height: 0; margin-bottom: 12px !important; padding: 24px 22px; }
+  .travel-step h3 { margin-top: 15px !important; font-size: 25px; }
+  .text-card { min-height: 0; margin-bottom: 13px !important; padding: 28px 23px; }
+  .text-card h3 { font-size: 28px; }
+  .info-note { width: calc(100% - 36px); }
+  .confirmation-note { width: calc(100% - 28px); padding: 24px 21px; grid-template-columns: 42px 1fr; gap: 14px; }
+  .confirmation-note .line-icon { width: 38px; height: 38px; }
+  .confirmation-note h2 { font-size: 26px; }
 
   .site-footer { min-height: 126px; }
   .footer-inner { width: calc(100% - 36px); min-height: 126px; grid-template-columns: auto 1fr; gap: 12px; }
