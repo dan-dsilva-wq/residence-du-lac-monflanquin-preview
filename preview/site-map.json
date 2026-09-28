@@ -1,0 +1,82 @@
+{
+  "home": {
+    "slug": "lac-coulon-home",
+    "preview": "",
+    "pattern": "homepage.php",
+    "lang": "en",
+    "pair": "fr-home",
+    "title": "Home"
+  },
+  "the-home": {
+    "slug": "the-home",
+    "preview": "the-home",
+    "pattern": "the-home.php",
+    "lang": "en",
+    "pair": "fr-the-home",
+    "title": "The home"
+  },
+  "pool-lake": {
+    "slug": "pool-and-lake",
+    "preview": "pool-and-lake",
+    "pattern": "pool-and-lake.php",
+    "lang": "en",
+    "pair": "fr-pool-lake",
+    "title": "Pool & lake"
+  },
+  "village": {
+    "slug": "the-village",
+    "preview": "the-village",
+    "pattern": "the-village.php",
+    "lang": "en",
+    "pair": "fr-village",
+    "title": "The village"
+  },
+  "good-to-know": {
+    "slug": "good-to-know",
+    "preview": "good-to-know",
+    "pattern": "good-to-know.php",
+    "lang": "en",
+    "pair": "fr-good-to-know",
+    "title": "Good to know"
+  },
+  "fr-home": {
+    "slug": "fr",
+    "preview": "fr",
+    "pattern": "homepage-fr.php",
+    "lang": "fr",
+    "pair": "home",
+    "title": "Accueil"
+  },
+  "fr-the-home": {
+    "slug": "fr-la-maison",
+    "preview": "fr/la-maison",
+    "pattern": "la-maison-fr.php",
+    "lang": "fr",
+    "pair": "the-home",
+    "title": "La maison"
+  },
+  "fr-pool-lake": {
+    "slug": "fr-piscine-et-lac",
+    "preview": "fr/piscine-et-lac",
+    "pattern": "piscine-et-lac-fr.php",
+    "lang": "fr",
+    "pair": "pool-lake",
+    "title": "Piscine et lac"
+  },
+  "fr-village": {
+    "slug": "fr-le-village",
+    "preview": "fr/le-village",
+    "pattern": "le-village-fr.php",
+    "lang": "fr",
+    "pair": "village",
+    "title": "Le village"
+  },
+  "fr-good-to-know": {
+    "slug": "fr-infos-pratiques",
+    "preview": "fr/infos-pratiques",
+    "pattern": "infos-pratiques-fr.php",
+    "lang": "fr",
+    "pair": "good-to-know",
+    "title": "Infos pratiques"
+  }
+}
